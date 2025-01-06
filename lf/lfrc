@@ -1,0 +1,5 @@
+# Shell
+set shell /usr/bin/bash
+
+# Icons
+set icons true

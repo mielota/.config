@@ -1,0 +1,52 @@
+{
+    "height":30,
+    "spacing": 4,
+    "modules-left": [
+        "sway/workspaces",
+	"sway/window",
+        "sway/mode",
+        "sway/scratchpad",
+        "custom/media"
+    ],
+    "modules-center": [
+	"clock"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network"
+    ],
+    "sway/mode": {
+        "format": "  <span style=\"italic\">{}</span>  "
+    },
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+    "clock": {
+        "timezone": "Europe/Paris",
+        "tooltip-format": "{:%Y:%B}",
+        "format-alt": "{:%d-%m-%Y}"
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        "format": "{icon}   {volume}",
+        "format-muted": "󰝟   {volume}",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" 
+    },
+}

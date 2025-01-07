@@ -17,3 +17,6 @@ Ce dossier .config contient des fichiers de configurations pour les paquets suiv
     Terminal
   cava : https://github.com/karlstav/cava
     Visualiseur d'audio
+
+
+À noter que ces configurations ont été crées en fin 2024.

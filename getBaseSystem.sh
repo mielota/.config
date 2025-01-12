@@ -1,4 +1,4 @@
-# Note : These packages are installed under void linux (xbps-query)
+# Note : These packages are installed under void linux (xbps-query package manager)
 
 sudo xbps-install -Sy void-repo-nonfree void-repo-multilib
 sudo xbps-install -Syu

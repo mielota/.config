@@ -9,7 +9,7 @@ set $menu rofi -show drun
 output HDMI-A-1 resolution 2560x1440@99.946Hz
 
 # Default wallpaper
-output * bg /usr/share/backgrounds/sway/wallpaper.jpeg fill
+output * bg ~/.config/wallpapers/wallpaper.jpeg fill
 
 # Status bar
 exec waybar
